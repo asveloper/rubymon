@@ -5,4 +5,9 @@ class PagesController < ApplicationController
   def login
     redirect_to '/auth/facebook'
   end
+
+  def facebook
+    data =  env['omniauth.auth']
+  end
+
 end
