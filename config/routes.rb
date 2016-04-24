@@ -4,9 +4,6 @@ Rails.application.routes.draw do
   root 'pages#index'
 
   get 'pages/index'
-  get 'pages/login'
-
-  get '/auth/facebook/callback', to: "pages#facebook"
 
   resources :monsters
   # The priority is based upon order of creation: first created -> highest priority.
